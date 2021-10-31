@@ -1,6 +1,98 @@
 .card-list{
-    justify-content: right;
-    float: right;
-    text-align: right;
+    width: 30%;
+    height: 88vh;
+    position: fixed;
+    top: 12vh;
+    right:0;
+    overflow: auto;
+    overflow-x: hidden;
+    bottom: 0;
+}
 
+body{
+    font-family:"Noto Sans", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper{
+    margin:2rem;
+    display:grid;
+    gap:1rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 0 0 10px 5px gray;
+    border-radius:2px;
+    min-width: 28rem;
+    display:flex;
+    transition: 0.1s ease-in-out;
+    margin: 2rem 0;
+}
+
+.cardActive{
+    box-shadow: 0 0 20px 10px orange;
+    border-radius:2px;
+    min-width: 28rem;
+    display:flex;
+    transition: 0.1s;
+    margin: 2rem 0;
+}
+
+.card-img{
+    width:14rem;
+    height:11rem;
+    object-fit: cover;
+}
+
+.card-body{
+    margin:1rem;
+    flex-grow: 1;
+}
+
+.card-title{
+    line-height:1.4rem;
+    margin-bottom:0.5rem;
+}
+
+.card-description{
+    line-height: 1.2rem;
+}
+
+.card-rating{
+    color:rgb(0, 72, 226);
+    font-size:1.4rem;
+    margin-top:0.6rem;  
+}
+.card-rating::before{
+    content:"Rating: ";
+    position:relative;
+    color:rgb(0, 0, 0);
+}
+.card-rating::after{
+    content:"/5";
+    position:relative;
+    color:rgb(0, 0, 0);
+    padding-left: 0.2rem;
+}
+
+.card-btn{
+    border:none;
+    border-top: 1px solid black;
+    background-color: transparent;
+    font-family: inherit;
+    font-size:1.2rem;
+    font-weight: bold;
+    color:inherit;
+    width:100%;
+    padding-top:1rem;
+    margin-top:1rem;
+    cursor:pointer;
+}
+
+@media screen and (max-width:800px){
+    .card-img{
+        display: block;
+    }
 }

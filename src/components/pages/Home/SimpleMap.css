@@ -1,20 +1,18 @@
 .map-general{
     position: fixed;
-    z-index: 1;
-    top: 0;
+    top: 12vh;
     width: 70%;
     float: left;
     bottom: 0;
 }
 
-@media screen and (max-width: 800px) {
-}
-
-
 @media screen and (max-width: 600px) {
     .map-general{
         width: 100%;
         float: center;
-        z-index: 1;
     }
+}
+
+img{
+    transition: 0.1s ease-in-out;
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import './Pin.css'
+import './SimpleMap.css'
 import PinImage from './map-pin.svg'
 
 function Pin(props) {
-    const hover = (props.eventNum == props.alt)
+    const hover = (props.eventNum === props.alt)
     return (
         <div onMouseOver={() => props.setEventNum(props.alt)}
             onMouseLeave={() => props.setEventNum(0)}>

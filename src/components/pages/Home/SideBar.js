@@ -1,17 +1,21 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './SideBar.css'
+import Card from './Card'
 
 function SideBar(props) {
-    const cardList = props.item.map(card => {
-        return (
-            <li key={card.index}>
-                {props.eventNum}
-            </li>
-        )
-    })
+    const cardList = props.item.map(card => <Card
+        alt={card.id}
+        party={card.party}
+        img={card.img}
+        rating={card.rating}
+        more={card.more}
+        user={card.user}
+        eventNum={props.eventNum}
+        setEventNum={props.setEventNum}
+    />)
     return (
-        <div>
-            <ul className="card-list">{cardList}</ul>
+        <div className="card-list">
+            {cardList}
         </div>
     )
 }

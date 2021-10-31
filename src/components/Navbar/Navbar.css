@@ -35,7 +35,7 @@ nav{
 }
 
 .logo font {
-    color: white
+    color: white;
 }
 
 .menu-list {
@@ -81,47 +81,3 @@ nav{
         margin-left: 15px;
     }
 }
-/*
-@media screen and (max-width: 600px) {
-    nav{
-        padding: 20px;
-        z-index: 100000;
-    }
-    .menu-icon{
-        display: block;
-    }
-    .menu-list{
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.30);
-        padding: 3vh;
-        right:0;
-        top: 70px;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .menu-list li{
-        margin-bottom: 20px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu-list li:last-child {
-        margin-bottom: 0px;
-    }
-    
-    .menu-list li a, 
-    .menu-list li:last-child a{
-        width: 100px;
-        display: block;
-        margin: auto;
-    }
-    
-    .menu-list.close {
-        right: -100%;
-        transition: all 0.5s ease-in-out;
-    }
-    
-}
-*/
