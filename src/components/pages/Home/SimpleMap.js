@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GoogleMapReact from 'google-map-react';
+
 import './SimpleMap.css'
 
-class SimpleMap extends Component {
-  static defaultProps = {
+import Pin from './Pin'
+
+function SimpleMap (props){
+
+  const InitialPos = {
     center: {
       lat: 34.413,
       lng: -119.859
@@ -11,26 +15,25 @@ class SimpleMap extends Component {
     zoom: 16
   };
 
-  render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div className="map-general">
-        <GoogleMapReact
-          bootstrapURLKeys={{ key:"AIzaSyDOQ7paZFBDSnK0stDffkN8VdYeFwnzq3U"}}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <img
-            lat={34.413}
-            lng={-119.859}
-            width={50}
-            src="https://cdn2.iconfinder.com/data/icons/everything-but-the-kitchen-sink-filled/100/common-45-512.png"
-            alt="map pin"
-          />
-        </GoogleMapReact>
-      </div>
-    );
-  }
+  const pindata = props.item.map(pin => <Pin 
+    alt={pin.id}
+    lat={pin.late} 
+    lng={pin.long}
+    eventNum={props.eventNum}
+    setEventNum={props.setEventNum}
+  />)
+  
+  return (
+    <div className="map-general">
+      <GoogleMapReact
+        bootstrapURLKeys={{ key:"AIzaSyDOQ7paZFBDSnK0stDffkN8VdYeFwnzq3U"}}
+        defaultCenter={InitialPos.center}
+        defaultZoom={InitialPos.zoom}
+      >
+        {pindata}
+      </GoogleMapReact>
+    </div>
+  )
 }
 
 export default SimpleMap;

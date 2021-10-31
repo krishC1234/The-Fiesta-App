@@ -1,11 +1,12 @@
 import './App.css';
 import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './pages/Home'
-import Help from './pages/Help'
-import List from './pages/List'
-import Login from './pages/Login'
-import Navbar from './Navbar/Navbar'
+
+import Home from './components/pages/Home'
+import Help from './components/pages/Help'
+import List from './components/pages/List'
+import Login from './components/pages/Login'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   return (
