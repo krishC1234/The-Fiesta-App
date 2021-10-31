@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import './SimpleMap.css'
 
 class SimpleMap extends Component {
   static defaultProps = {
@@ -13,7 +14,7 @@ class SimpleMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div className="map-general">
         <GoogleMapReact
           bootstrapURLKeys={{ key:"AIzaSyDOQ7paZFBDSnK0stDffkN8VdYeFwnzq3U"}}
           defaultCenter={this.props.center}
@@ -24,6 +25,7 @@ class SimpleMap extends Component {
             lng={-119.859}
             width={50}
             src="https://cdn2.iconfinder.com/data/icons/everything-but-the-kitchen-sink-filled/100/common-45-512.png"
+            alt="map pin"
           />
         </GoogleMapReact>
       </div>

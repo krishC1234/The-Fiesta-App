@@ -1,0 +1,127 @@
+nav{
+    background:url("https://images.theconversation.com/files/223729/original/file-20180619-126566-1jxjod2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+    background-position: center;
+    background-size: cover;
+    padding: 4vh;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    position: relative;
+    z-index: 99
+}
+
+.menu-icon {
+    display: none;
+}
+
+.fas {
+    cursor: pointer;
+}
+
+.menu-icon .fa-times {
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-icon .fa-bars {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.logo font {
+    color: white
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+
+.menu-list li:last-child a{
+    font-weight: 400;
+    color: black;
+    padding: 5px 10px;
+    background-color: rgba(255, 200, 0, 1);
+    transition: all 0.5s ease-in-out;
+    margin-left: 20px;
+    border-radius: 2px;
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+    background-color: black;
+    border-radius: 2px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        font-size: 25px
+    }
+    .menu-list li a{
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
+/*
+@media screen and (max-width: 600px) {
+    nav{
+        padding: 20px;
+        z-index: 100000;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-list{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.30);
+        padding: 3vh;
+        right:0;
+        top: 70px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-list li{
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-list li:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .menu-list li a, 
+    .menu-list li:last-child a{
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+    
+    .menu-list.close {
+        right: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+    
+}
+*/
