@@ -16,6 +16,7 @@ function SimpleMap (props){
   };
 
   const pindata = props.item.map(pin => <Pin 
+    key={pin.id}
     alt={pin.id}
     lat={pin.late} 
     lng={pin.long}

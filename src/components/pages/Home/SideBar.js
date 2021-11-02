@@ -5,6 +5,7 @@ import Card from './Card'
 function SideBar(props) {
     const cardList = props.item.map(card => <Card
         alt={card.id}
+        key={card.id}
         party={card.party}
         img={card.img}
         rating={card.rating}
