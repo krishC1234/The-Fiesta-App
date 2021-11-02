@@ -8,10 +8,11 @@ function Pin(props) {
         <div onMouseOver={() => props.setEventNum(props.alt)}
             onMouseLeave={() => props.setEventNum(0)}>
             <img alt={props.alt} 
-            lat={props.late} 
-            lng={props.long} 
-            width={(hover)?50:30}
-            src={PinImage}
+                lat={props.late} 
+                lng={props.long} 
+                width={(hover)?50:30}
+                src={PinImage}
+                className="imag"
             />
             <h1>{props.i}</h1>
         </div>

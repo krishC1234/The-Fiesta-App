@@ -6,7 +6,7 @@ const pinData = [
         party:"Summer Party1",
         img:"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/summer-party-video-ad-template-design-024d0ddcdf0746f9fa1e87773c385103_screen.jpg?ts=1567082239",
         rating:5,
-        more:"With Ken Adams; Food and Drinks; $10 per entry; July 31 9AM",
+        more:"With Ken Adams; Food and Drinks; $10 per entry; July 31 9AM, With Ken Adams; Food and Drinks; $10 per entry; July 31 9AM",
         user:"Gen Tamada"
     },
     {
