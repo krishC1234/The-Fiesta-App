@@ -9,12 +9,20 @@ function Pin(props) {
             onMouseLeave={() => props.setEventNum(0)}>
             <img alt={props.alt} 
                 lat={props.late} 
-                lng={props.long} 
-                width={(hover)?50:30}
+                lng={props.long}
+                width={30}
+                className={(hover)?"imagActive":"imag"}
                 src={PinImage}
-                className="imag"
             />
-            <h1>{props.i}</h1>
+            <div className={(hover)?"popupActive":"popup"}>
+                <div className="pop-body">
+                    <p className="pop-title">{props.party}</p>
+                    <p className="pop-description">
+                        {props.more}
+                    </p>
+                    <h2 className="pop-rating">{props.rating}</h2>
+                </div>
+            </div>
         </div>
     )
 }

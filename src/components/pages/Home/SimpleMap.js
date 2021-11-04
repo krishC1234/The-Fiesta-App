@@ -22,6 +22,11 @@ function SimpleMap (props){
     lng={pin.long}
     eventNum={props.eventNum}
     setEventNum={props.setEventNum}
+    party={pin.party}
+    img={pin.img}
+    rating={pin.rating}
+    more={pin.more}
+    user={pin.user}
   />)
   
   return (
