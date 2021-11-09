@@ -1,4 +1,4 @@
-.card-list{
+.event-card-list{
     width: 30%;
     height: 88vh;
     position: fixed;
@@ -10,12 +10,12 @@
     transition:0.1s ease-in-out;
 }
 
-.card body{
+.event-card body{
     font-family:"Noto Sans", sans-serif;
     color: rgb(0, 0, 0);
 }
 
-.card{
+.event-card{
     box-shadow: 0 0 10px 5px gray;
     border-radius:2px;
     display:flex;
@@ -32,18 +32,18 @@
     background-color: lightblue;
 }
 
-.card-img{
+.event-card-img{
     width:30%;
     object-fit: cover;
 }
 
-.card-body{
+.event-card-body{
     margin:1rem;
     width:60%;
     flex-grow: 1;
 }
 
-.card-title{
+.event-card-title{
     line-height:1.4rem;
     margin-bottom:0.5rem;
     overflow: hidden;
@@ -51,7 +51,7 @@
     text-overflow: ellipsis;
 }
 
-.card-description{
+.event-card-description{
     line-height: 1.2rem;
     display:block;
     width:90%;
@@ -60,24 +60,24 @@
     text-overflow: ellipsis;
 }
 
-.card-rating{
+.event-card-rating{
     color:rgb(0, 72, 226);
     font-size:1.4rem;
     margin-top:0.6rem;  
 }
-.card-rating::before{
+.event-card-rating::before{
     content:"Rating: ";
     position:relative;
     color:rgb(0, 0, 0);
 }
-.card-rating::after{
+.event-card-rating::after{
     content:"/5";
     position:relative;
     color:rgb(0, 0, 0);
     padding-left: 0.2rem;
 }
 
-.card-btn{
+.event-card-btn{
     border:none;
     border-top: 1px solid black;
     background-color: transparent;
@@ -154,7 +154,7 @@
 }
 
 @media screen and (max-width:1000px){
-    .card{
+    .event-card{
         flex-direction: column;
         text-align: center;
     }
@@ -162,19 +162,19 @@
         flex-direction: column;
         text-align: center;
     }
-    .card-img,
-    .card-body{
+    .event-card-img,
+    .event-card-body{
         width:100%;
     }
-    .card-description{
+    .event-card-description{
         width: 90%;
     }
-    .card-btn{
+    .event-card-btn{
         width:80%;
     }
 }
 @media screen and (max-width:600px){
-    .card-list{
+    .event-card-list{
         visibility: hidden;
         z-index: 1;
         width:0;

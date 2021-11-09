@@ -1,13 +1,17 @@
 nav{
-    background:url("https://images.theconversation.com/files/223729/original/file-20180619-126566-1jxjod2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+    background-color: black;
     background-position: center;
     background-size: cover;
-    padding: 4vh;
+    padding: 3vh;
     display: flex;
     justify-content: space-between;
     color: black;
     position: relative;
     z-index: 99
+}
+
+.logo{
+    height: 6vh;
 }
 
 .menu-icon {
@@ -26,16 +30,6 @@ nav{
 .menu-icon .fa-bars {
     transform: rotate(180deg);
     transition: all 0.2s ease-in-out;
-}
-
-.logo{
-    font-weight: 600;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-}
-
-.logo font {
-    color: white;
 }
 
 .menu-list {
@@ -73,9 +67,6 @@ nav{
 }
 
 @media screen and (max-width: 800px) {
-    .logo{
-        font-size: 25px
-    }
     .menu-list li a{
         font-size: 16px;
         margin-left: 15px;

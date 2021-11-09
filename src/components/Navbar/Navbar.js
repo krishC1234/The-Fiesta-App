@@ -1,9 +1,10 @@
 import React from 'react'
-import "./Navbar.css"
+import "./NavBar.css"
 import {MenuList} from "./MenuList"
 import { NavLink } from 'react-router-dom'
+import logoImage from './fiesta.png'
 
-function Navbar() {
+function NavBar() {
     const menuList = MenuList.map(({url, title}, index) => {
         return (
             <li key={index}>
@@ -15,12 +16,10 @@ function Navbar() {
     })
     return (
         <nav>
-            <div className="logo">
-                <font>FIESTA</font>
-            </div>
+            <img src={logoImage} className="logo"/>
             <ul className="menu-list">{menuList}</ul>
         </nav>
     )
 }
 
-export default Navbar
+export default NavBar

@@ -1,9 +1,9 @@
 import React from 'react'
 import './SideBar.css'
-import Card from './Card'
+import EventCard from './EventCard'
 
 function SideBar(props) {
-    const cardList = props.item.map(card => <Card
+    const cardList = props.item.map(card => <EventCard
         alt={card.id}
         key={card.id}
         party={card.party}
@@ -15,7 +15,7 @@ function SideBar(props) {
         setEventNum={props.setEventNum}
     />)
     return (
-        <div className="card-list">
+        <div className="event-card-list">
             {cardList}
         </div>
     )
