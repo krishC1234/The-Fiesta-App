@@ -1,0 +1,29 @@
+.map-general{
+    position: fixed;
+    top: 12vh;
+    width: 70%;
+    float: left;
+    bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .map-general{
+        width: 100%;
+        float: center;
+    }
+}
+
+.imag{
+    transition: 0.1s ease-in-out;
+    left:-15px;
+    bottom:0;
+    position:absolute;
+}
+
+.imagActive{
+    transition: 0.1s ease-in-out;
+    left:-15px;
+    bottom:0;
+    position:absolute;
+    filter: invert(74%) sepia(77%) saturate(1709%) hue-rotate(2deg) brightness(108%) contrast(102%);
+}
